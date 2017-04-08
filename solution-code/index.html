@@ -6,29 +6,57 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="author" href="humans.txt">
     <script src="js/main.js"></script>
 </head>
 
 <body>
 </body>
-<main>
-    <header>Categories</h1>
-        <button>Dairy</button>
-        <button>Meat</button>
-        <button>Produce</button>
+<main class=container>
+    <header>
+        <h1>Categories</h1>
+        <button>Candy</button>
+        <button>Cereal</button>
+        <button>juice</button>
     </header>
     <section class="category">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <div class="flex" id='candy'>
+            <div class="items"><img src="images/candy/kit-kat.jpg" alt="kit-kat" data-food="">Kit-Kat</div>
+            <div class="items"><img src="images/candy/m&ms.jpg" alt="m&ms"></div>
+            <div class="items"><img src="images/candy/skittles.jpg" alt="skittles"></div>
+            <div class="items"><img src="images/candy/snickers.jpg" alt="snickers"></div>
+            <!-- <div class="items">#</div> -->
+        </div>
+        <div class="item" id='cereal'>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+        </div>
+        <div class="item" id='juice'>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+            <div class="items">#</div>
+        </div>
     </section>
-    <section>
+    <section class="shopping-cart">
+        <h1>Shopping Cart</h1>
+        <ul id=cart>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </section>
 </main>
+</body>
 
 </html>
