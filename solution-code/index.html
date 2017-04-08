@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="author" href="humans.txt">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -18,26 +18,26 @@
         <header>
             <h1>Categories</h1>
             <nav>
-                <button class="button">Candy</button>
-                <button class="button">Cereal</button>
-                <button class="button">Juice</button>
+                <button id="candybutton" class="button">Candy</button>
+                <button id="cereal-button" class="button">Cereal</button>
+                <button id="juice-button" class="button">Juice</button>
             </nav>
         </header>
-        <div class="candy">
+        <div id="candy" class="flex">
             <div class="items"><img src="images/candy/kit-kat.jpg" alt="kit-kat" data-food="">Kit-Kat</div>
             <div class="items"><img src="images/candy/m&ms.jpg" alt="m&ms">M&M's</div>
             <div class="items"><img src="images/candy/skittles.jpg" alt="skittles">Skittles</div>
             <div class="items"><img src="images/candy/snickers.jpg" alt="snickers">Snickers</div>
             <div class="items"><img src="images/candy/twix.jpg" alt="twix">Twix</div>
         </div>
-        <div class="cereal">
+        <div id="cereal" class="flex hide">
             <div class="items"><img src="images/cereal/cheerios.jpg" alt="cheerios">Cheerios</div>
             <div class="items"><img src="images/cereal/crunch.jpg" alt="crunch">Crunch</div>
             <div class="items"><img src="images/cereal/fruit-loops.jpg" alt="fruit loops">Fruit Loops</div>
             <div class="items"><img src="images/cereal/puffs.jpg" alt="puffs">Puffs</div>
             <div class="items"><img src="images/cereal/raisin-bran.jpg" alt="raisin-bran">Cereal</div>
         </div>
-        <div class="juice">
+        <div id="juice" class="flex hide">
             <div class="items"><img src="images/juice/apple-juice.jpg" alt="apple juice">Apple Juice</div>
             <div class="items"><img src="images/juice/carrot-juice.jpg" alt="carrot juice"> Carrot Juice</div>
             <div class="items"><img src="images/juice/grape-juice.jpeg" alt="grape juice">Grape Juice</div>
