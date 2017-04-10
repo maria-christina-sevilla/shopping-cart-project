@@ -5,11 +5,14 @@
 body {
     display: flex;
     align-content: row;
-    justify-content: center: ;
+    justify-content: center;
+    background-color: #e6e6e6;
 }
 
 .shoppingcart {
     width: 100%;
+    background-image: url(images/chalkboard.jpg);
+    background-size: cover;
 }
 
 .category {
@@ -27,21 +30,20 @@ h1 {
     color: white;
     font-size: 60px;
     margin: 0 auto;
-    /*margin: -20px 0 0 0;
-    padding: 30px 0 0 0;*/
+    font-family: 'Rock Salt', cursive;
 }
 
 .shoppingcart h1 {
-    color: black;
+    color: white;
     text-align: center;
 }
 
 .button {
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
     padding: 10px;
     border-style: none;
-    color: white;
+    color: #e6e6e6;
     background-color: transparent;
     padding: 20px 10px 20px 10px;
 }
@@ -53,15 +55,27 @@ img {
 
 .items {
     width: 200px;
-    height: 250px;
-    border: .5px solid grey;
+    height: 275px;
+    background-color: #e6e6e6;
+    border: 2px solid gray;
+    text-align: center;
+    background-color: white;
+    background-color: white;
+    -moz-transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -o-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+.items:hover {
+    background-color: black;
+    color: white;
 }
 
 #candy,
 #cereal,
 #juice {
     font-size: 20px;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -69,8 +83,7 @@ img {
     align-items: center;
     height: 900px;
     width: 60%;
-    /* margin: 20px 70px;
-    padding: 10px 30px 0px 60px;*/
+    padding: 20px 150px;
 }
 
 .hide {
@@ -78,13 +91,16 @@ img {
 }
 
 ul {
-    margin: 20px 50px;
-    border: 2px solid black;
-    width: 50%;
-    height: 200px;
+    width: 70%;
+    height: 800px;
     text-align: center;
+    margin: 50px;
 }
 
 li {
-    margin-right: 50px;
+    color: #e6e6e6;
+    font-size: 40px;
+    list-style: none;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 20px 0;
 }

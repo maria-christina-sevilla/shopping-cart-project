@@ -24,67 +24,60 @@ function onPageLoad() {
 
     //Shopping Cart
     // When you click on an image the items will be sent to the shopping cart
-    // [div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items]
-    // since these items are in an array, use a for loop to put items in shopping cart
 
-    // 1. Hey, HTML document find me everything wiht the class " ", that I want the user to click on to put in the shopping cart.
-    // 2. Store items in the array.
-    // 3.What do you want to do with the array? (When item clicked add event listener)
-    // 4. create an empty list element and store it in a variable.
-    // 5. Text, Hey, list item I just created, I want to set your list item with innerHTML = points to items at indices[0] by only 1 item in array .querySeclector
-    // 6.grab innerHTML and append to list with .appendchild
+    var itemsArray = document.getElementsByClassName("items"); //1
+    for (var i = 0; i < itemsArray.length; i++) { //2
 
+        var addItem = itemsArray[i]; //2
+        addItem.addEventListener("click", function() { //3
 
-    var itemsArray = document.getElementsByClassName("items");
-    for (var i = 0; i < itemsArray.length; i++) {
-
-        var firstItem = itemsArray[i];
-        firstItem.addEventListener("click", function() {
-
-            var listItem = document.createElement('li');
-            listItem.innerHTML = this.innerText;
+            var listItem = document.createElement('li'); //4
+            listItem.innerHTML = this.innerText; //5
             console.log(this);
 
-            var cart = document.getElementById('cart');
+            var cart = document.getElementById('cart'); //6
             cart.appendChild(listItem);
 
         });
     }
-
-
-
-    // // index [0]
-    // var firstItem = itemsArray[0];
-    // firstItem.addEventListener("click", function() {
-
-    //     var listItem = document.createElement('li');
-    //     listItem.innerHTML = this.innerText;
-    //     console.log(this);
-
-    //     var cart = document.getElementById('cart');
-    //     cart.appendChild(listItem);
-
-
-    // });
-
-    // // index[1]
-    // var secondItem = itemsArray[1];
-    // secondItem.addEventListener("click", function() {
-
-    //     var listItem = document.createElement('li');
-    //     listItem.innerHTML = this.innerText;
-    //     console.log(this);
-
-    //     var cart = document.getElementById('cart');
-    //     cart.appendChild(listItem);
-    // });
-
-
-
-
-
-
-
 }
 
 document.addEventListener("DOMContentLoaded", onPageLoad);
+
+//Shopping Cart Notes:
+// When you click on an image the items will be sent to the shopping cart
+// [div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items, div.items]
+// since these items are in an array, use a for loop to put items in shopping cart
+
+// 1. Hey, HTML document find me everything wiht the class " ", that I want the user to click on to put in the shopping cart.
+// 2. Store items in the array.
+// 3.What do you want to do with the array? (When item clicked add event listener)
+// 4. create an empty list element and store it in a variable.
+// 5. Text, Hey, list item I just created, I want to set your list item with innerHTML = points to items at indices[0] by only 1 item in array .querySeclector
+// 6.grab innerHTML and append to list with .appendchild
+
+// // index [0]
+// var firstItem = itemsArray[0];
+// firstItem.addEventListener("click", function() {
+
+//     var listItem = document.createElement('li');
+//     listItem.innerHTML = this.innerText;
+//     console.log(this);
+
+//     var cart = document.getElementById('cart');
+//     cart.appendChild(listItem);
+
+
+// });
+
+// // index[1]
+// var secondItem = itemsArray[1];
+// secondItem.addEventListener("click", function() {
+
+//     var listItem = document.createElement('li');
+//     listItem.innerHTML = this.innerText;
+//     console.log(this);
+
+//     var cart = document.getElementById('cart');
+//     cart.appendChild(listItem);
+// });
